@@ -7,7 +7,7 @@ namespace System.ComponentModel.DataAnnotations
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class MetaModelAttribute : Attribute
     {
-        public MetaModelAttribute(string metaName=null)
+        public MetaModelAttribute(string metaName = null)
         {
             this.MetaName = metaName;
         }

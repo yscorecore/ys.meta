@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using YS.Knife;
-using System.Linq;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Reflection;
 
 namespace YS.Meta.Impl.Assembly
 {
@@ -36,7 +36,7 @@ namespace YS.Meta.Impl.Assembly
             return new MetaInfo
             {
                 Name = name,
-               // DisplayName = GetDisplayName(displayAttr, attributeCollection),
+                // DisplayName = GetDisplayName(displayAttr, attributeCollection),
                 //Description = GetDescription(displayAttr, attributeCollection),
                 Properties = GetProperties(modelType),
             };
